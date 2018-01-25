@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rj.shared.mapper.StateMapper">
+
+	
+<!-- 查询待审核 -->
+	<select id="findsss" resultType="documen" >
+		select
+		    documenid, chiTitle, recname, rectime,enclosure,recstate
+			from documen 
+			where recstate = 2;
+	</select>
+	
+<!-- 审核 -->
+	<update id="updatesss" parameterType="documen">
+		UPDATE documen  SET recstate = 0  WHERE documenid = #{documenid}
+	</update>
+	<update id="updatesss2" parameterType="documen">
+		UPDATE documen  SET recstate = 1  WHERE documenid = #{documenid}
+	</update>
+	
+<!-- 查询已完成 -->
+	<select id="findywc" resultType="documen" >
+		select chiTitle,rectime,recname,enclosure,documenid
+			from documen 
+			where recstate = 0
+	</select>
+<!-- 删除已完成 -->
+	<delete id="deleteywc" parameterType="int">
+		delete from documen where documenid = #{documenid}
+	</delete>
+	
+	<!-- 查询用户 -->
+	<select id="findyh" resultType="user" >
+		select *
+			from user 
+	</select>	
+<!-- 删除用户 -->
+	<delete id="deleteyh" parameterType="int">
+		delete from user where userid = #{userid}
+	</delete>
+	<!-- 添加用户 -->
+	<delete id="addyh" parameterType="user">
+		insert into user (username,userunit,password,isadmin,userstate) values(#{username},#{userunit},#{password},0,0)
+	</delete>
+	
+	<!-- 修改用户状态 -->
+	<update id="updateyhqy" parameterType="user">
+		UPDATE user  SET userstate = 0  WHERE userid = #{userid}
+	</update>
+	<update id="updateyhty" parameterType="user">
+		UPDATE user  SET userstate = 1  WHERE userid = #{userid}
+	</update>
+	
+	<!-- 查询总条数 -->
+	<select id="findSumCondition" parameterType="documen" resultType="int">
+		SELECT COUNT(*) FROM documen WHERE  chiTitle LIKE '%${chiTitle}%' 
+	</select>
+	
+	
+<select id="findConditionPageBean" resultType="documen">
+	SELECT 	*
+	FROM documen
+		WHERE chiTitle like '%${documen.chiTitle}%'
+		limit #{start},#{pageSize}
+	</select>
+	
+	
+	
+</mapper>	

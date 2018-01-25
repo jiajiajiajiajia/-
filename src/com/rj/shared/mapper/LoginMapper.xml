@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rj.shared.mapper.LoginMapper" >
+	<select id="loginUser" parameterType="user" resultType="user">
+       select * from user where username = #{username} and password = #{password} 
+       and userstate = 0
+	</select>
+	
+	<select id="isAliveUser" parameterType="user" resultType="user">
+       select * from user where username = #{username} and userstate = 0
+	</select>
+	<update id="updateUser" parameterType="user">
+		update user set userip = #{userip} , usertime = #{usertime}  where username = #{username}
+	</update>
+</mapper>

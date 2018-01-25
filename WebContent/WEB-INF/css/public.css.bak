@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,
+b, u, i, center, ol, ul, li,fieldset, form, label, legend,caption,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video { margin:0; padding:0; border: 0; list-style:none;} 
+dl, dt, dd, tbody, tfoot, thead, tr, th, td,table{margin:0; padding:0;}
+a,area{blr:expression(this.onFocus=this.blur())}
+a { text-decoration:none;}
+a:hover { text-decoration:none;}
+img { -ms-interpolation-mode: bicubic; }
+body{font-family:"微软雅黑";}
+table{border:none;}
+
+.flBox{float:left;}
+.frBox{float:right;}
+
+.fix{zoom:1;}
+.fix:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
+
+.posRelative{position:relative;}
+.posAbsolute{position:absolute;}
+
+.marginAuto{margin:0 auto;}
+.marginBot20{margin-bottom:20px;}
+.marginBot30{margin-bottom:30px;}
+
+.width1200{width:1200px;}
+
+.fontSize14{font-size:14px;}
+.fontSize24{font-size:24px;}
+
+.colorfff{color:#fff;}
+

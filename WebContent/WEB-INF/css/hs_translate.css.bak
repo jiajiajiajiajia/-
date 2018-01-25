@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+/*登录页面样式*/
+.loginTit{font-weight:700;line-height:60px;}
+.loginCenter{background:url(../images/loginCenter.jpg) no-repeat center;width:100%;}
+.loginMain{height:482px;}
+.userLoginDiv{top:97px;right:143px;width:273px;height:315px;}
+.userLoginTit{font-weight:700;text-align:center;}
+.userLoginDiv input{border:1px solid #fff;border-radius:2px;padding-left:13%;width:86%;height:40px;line-height:42px;color:#707070;}
+.userLoginDiv input.name{background:#cad3e9 url(../images/login_03.png) no-repeat 10px center;}
+.userLoginDiv input.password{background:#cad3e9 url(../images/login_07.png) no-repeat 10px center;}

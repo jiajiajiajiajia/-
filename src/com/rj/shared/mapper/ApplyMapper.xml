@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rj.shared.mapper.ApplyMapper" >
+	<select id="findBook" resultType="Documen" parameterType="Integer">
+		SELECT 
+			documenid,chiTitle,rectime,author,Authors,content,channelid
+		FROM 
+			documen
+		WHERE
+			recstate = 0
+		and documenid = #{documenid};
+	</select>
+	
+	<!-- 添加apply -->
+	<insert id="addApply" parameterType="Apply">
+		insert into Apply (documenid,userid,applyname,applytime)
+		 values(#{documenid},#{userid},#{applyname},#{applytime})
+	</insert>
+	
+	<!-- 添加documen -->
+	<insert id="addDocumen" parameterType="Documen">
+		insert into documen (chiTitle,author,enclosure,channelid,authors,content,recid,recname, recstate,rectime)
+		 values(#{chiTitle},#{author},#{enclosure},#{channelid},#{authors},#{content},#{recid},#{recname},2,#{rectime})
+	
+	</insert>
+	
+</mapper>

@@ -1,0 +1,118 @@
+.bigbox{
+	width: 1350px;
+	min-height: 400px;
+	box-shadow: 0px 0px 1px #0099E5;	
+}
+.senbox{
+	width: 800px;
+	box-shadow:red;
+	min-height: 400px;
+	background-color: #E5E5E5;
+	margin: 0px 300px;	
+	text-align:center;
+	display: flex;
+}
+.boxleft{
+	width: 200px;
+	min-height: 500px;
+	box-shadow: 0px 0px 1px #68C0F2;
+	margin: 0px 20px 0px 0px;
+	background:#B0BEC5;
+}
+.huibeijing{
+	background:#EEEEEE;
+}
+
+.hengpai{
+	display: flex;
+}
+.daohanglan{
+	text-align:center;
+	width: 100%;
+	height: 50px;
+	color: #311B92;
+	line-height: 50px;
+	font-size: 16px;
+	display: flex;
+	cursor：pointer;
+}
+.simokuai{
+	width: 100%;
+	height: 20px;
+	color: #B9C9C9;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	display: flex;
+	display: none;
+	border-bottom:1px #000000 ;
+	cursor：pointer;
+}
+
+
+.shangbianju{
+	margin: 30px 0px 0px 0px;
+}
+.xiaotutu{
+	width: 25px;
+	height: 25px;
+	margin: 15px 2px;
+}
+
+.daohanglan:hover{
+	background: #D7CCC8;
+}
+.font{
+	font-size: 15px;
+}
+
+
+
+/*我的申请样式开始*/
+.myApplication{background:#EEEEEE;width:62%;}
+.myAppMain{width:96%;}
+.div_search{border-bottom:1px solid #d3d3d3;height:68px;}
+.searchMain{bottom:10px;left:0;width:62.6%;height:43px;}
+.searchMainL{width:82.9%;}
+.searchMainLl{width:86%;}
+.searchMainLl select{border:1px solid #c9c9c9;border-right:none;width:15%;height:34px;outline:none;cursor:pointer;}
+.searchMainLl input{border:1px solid #c9c9c9;border-left:none;border-right:none;padding:0 0.5%;width:84%;height:32px;line-height:32px;outline:none;}
+.searchMainLr{border-top-right-radius:4px;border-bottom-right-radius:4px;background:#eb6100;width:14%;font-size:1.6em;text-align:center;line-height:34px;cursor:pointer;}
+.searchMainR{border-radius:4px;background:#68c0f2;font-size:1.6em;color:#fff;width:15%;height:34px;line-height:34px;text-align:center;cursor:pointer;}
+table.fileTable{border:1px solid #959595;font-size:1.4em;color:#313131;}
+table.fileTable thead td{border-bottom:1px solid #959595;background:#d2d2d2;}
+table.fileTable td{height:35px;text-align:center;}
+table.fileTable td.borderRight{border-right:1px solid #b9b9b9;}
+table.fileTable tr.backWhite td{background:#fff;}
+table.fileTable tr.backGrey td{background:#e7e7e7;}
+.turnPage1{text-align:center;font-size:1.4em;}
+.turnPage1 span{color:#636363;}
+.turnPage1 a{margin-right:8px;border:1px solid #c9c9c9;border-radius:4px;background:#fff;padding:5px 10px;color:#898989;}
+a.modify{text-decoration:underline;}
+@media screen and (max-width:1366px){
+	.applayMainLa{width:93%;}
+	.applayMainL{width:22%;}
+	.applayMainR{width:76%;}
+	ul.applayList li{font-size:14px;}
+	.turnPage a{padding:5px 8px;}
+	.applayBut button,.applayBut a{margin-right:2px;width:126px;}
+	.total{background:url(../images/wytj1_03.png) no-repeat left center;width:454px;}
+	}
+/*IE8下的hack*/
+.total{background:url(../images/wytj1_03.png) no-repeat left center\9;width:454px\9;}
+.applayBut button,.applayBut a{margin-right:2px\9;width:126px\9;}
+.applayMainLa{width:93%\9;}
+.applayMainL{width:22%\9;}
+.applayMainR{width:76%\9;}
+ul.applayList li{font-size:14px\9;}
+/*我要推荐页面样式开始*/
+.wytj_table tr{height:50px;}
+.wytj_table td{vertical-align:top;}
+.wytj_table td.td1{width:11%;}
+.wytj_table td.td2{width:8%;}
+.wytj_table td.td3{width:3%;}
+.wytj_table .num{margin-right:2px;font-size:25px;color:#00a1e9;}
+.wytj_table .bfh{color:#7d7d7d;}
+.total{margin-top:10px;background:url(../images/wytj_07.png) no-repeat left center;width:563px;height:10px;}
+.progress{top:0;left:0;background:url(../images/wytj_03.png) no-repeat left center;width:60%;height:10px;}
+.progressNum{top:-22px;right:-24px;background:url(../images/wytj_11.png) no-repeat center;padding-left:12px;width:36px;height:44px;line-height:44px;}

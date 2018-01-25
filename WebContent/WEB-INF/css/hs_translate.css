@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+/*登录页面样式*/
+.loginTit{font-weight:700;line-height:80px;}
+.loginCenter2{width:100%;}
+.loginCenter{width:100%;background:url(images/loginCenter.jpg) no-repeat;applayMainL}
+.loginMain{height:482px;}
+.userLoginDiv{top:97px;right:143px;width:273px;height:315px;}
+.userLoginTit{font-weight:700;text-align:center;}
+.userLoginDiv input{border:1px solid #fff;border-radius:2px;padding-left:13%;width:86%;height:40px;line-height:42px;color:#707070;}
+.userLoginDiv input.name{background:#cad3e9 url(../images/login_03.png) no-repeat 10px center;}
+.userLoginDiv input.password{background:#cad3e9 url(../images/login_07.png) no-repeat 10px center;}
+.zzc{top:0;left:0;background:#13163f;width:100%;height:100%;position:fixed;filter:alpha(opacity=0);opacity:0;}
+.registerDiv{top:-50%;margin-top:-257px;left:50%;margin-left:-368px;background:url(../images/register_05.png) no-repeat center;width:737px;height:515px;}
+.registerTit{height:55px;line-height:55px;}
+.registerTit h1{margin-left:30px;font-weight:700;}
+.registerTit img{top:11px;right:37px;width:24px;height:28px;cursor:pointer;}
+.registerDiv table{border:none;width:560px;}
+.registerDiv table td{height:65px;}
+td.tdName{width:95px;color:#375090;text-align:right;}
+td.tdCont input{border:1px solid #d9d9d9;background:#f0f0f0;padding:0 10px;width:435px;height:38px;line-height:42px;}
+.butArr{text-align:center;}
+.butArr button{border:none;border-radius:4px;background:#375090;color:#fff;cursor:pointer;}
+.butArr1 button{width:128px;height:43px;line-height:43px;}
+.butArr2 button{width:130px;height:50px;line-height:50px;font-size:18px;}
+
+/*首页样式开始*/
+.indexMaina{border:1px solid #c9c9c9;background:#fff;width:1157px;height:360px;}
+.indexMainaa{margin-top:20px;width:800px;height:320px;}
+.indexMainTop{border-bottom:2px solid #e5e5e5;height:40px;}
+.blockLogo img{vertical-align:middle;margin-top:-3px;}
+.blockSelect div{border:1px solid #c9c9c9;background:#fff;border-radius:4px;width:90px;height:27px;line-height:27px;font-size:16px;color:#7d7d7d;text-align:center;cursor:pointer;}
+.blockSelect div:hover{border:1px solid #fff;background:#0099e5;color:#fff;}
+.blockSelect div.hover{border:1px solid #fff;background:#0099e5;color:#fff;}
+.blockSelect .unfinished{}
+.blockSelect div:hover{}
+.mainCont ul li span{color:#707070;}
+.mainCont ul li{}
+.mainCont ul li a{display:block;background:url(../images/dot_03.png) no-repeat left center;padding-left:10px;overflow:hidden;line-height:35px;}
+.mainCont ul li .listCont{overflow:hidden;width:700px;height:35px;white-space:nowrap;text-overflow:ellipsis;}
+.mainCont ul li:hover .listCont{color:#fc3a4e;}
+.more{border:1px solid  #696969;background:#fff;width:450px;height:35px;line-height:37px;text-align:center;color:indigo;cursor:pointer;}
+
+/*申请翻译*/
+.applayHeader{background-color:#B9C9C9;width:100%;height:132px;}
+.applayNav{right:220px;bottom:20px;}
+.applayNav a{color:#ffe7a7;}
+.applayMainL{background-color:#fff;background:url(../images/2.jpg) no-repeat;width:16%;margin-left:10px;}
+.applayMainLa{margin-top:30px;width:90%;height:550px;}
+.wytjBut{border-radius:4px;background-color:#FFB74D;height:45px;line-height:45px;text-align:center;cursor:pointer;}
+ul.applayList li{background:url(../images/dot1_03.png) no-repeat left center;padding-left:15px;font-size:16px;line-height:30px;}
+ul.applayList li a{color:#546E7A;}
+.turnPage{text-align:center;}
+.turnPage a{display:inline-block;margin-right:15px;padding:5px 10px;border:1px solid #555555;border-radius:4px;color:#555555;font-size:20px;}
+.turnPage a:hover{background:#0e87d0;}
+.turnPage img{margin-top:-3px;vertical-align:middle;cursor:pointer;}
+.applayPosDiv{border-bottom:1px solid #d2d2d2;background:#EFEBE9;height:66px;line-height:66px;}
+.applayPos{width:90%;}
+.applayPos a{color:#898989;}
+.applayMainR{width:83%;}
+.applayCont{width:90%;}
+.applayCont ul li{margin-bottom:20px;line-height:32px;overflow:hidden;}
+.applayCont ul li  span.span1{display:inline-block;width:10%;}
+.applayCont ul li  span.span2{width:90%;}
+.applayBut{top:0;right:0;}
+.applayBut button,.applayBut a{display:inline-block;margin-right:30px;border:none;border-radius:4px;width:150px;height:45px;text-align:center;line-height:45px;font-size:18px;color:#fff;cursor:pointer;}
+.applayBut button.sqfy{background:#FFB74D;}
+.applayBut a.xkyw,.applayBut a.xkfy{background:#0099e5;}
+.applayBut a.xkyw span,.applayBut a.xkfy span{display:inline-block;margin-left:6px;background:url(../images/applay_03.png) no-repeat center;width:28px;height:16px;font-size:14px;line-height:16px;color:#0099e5;}
+.applayFooter{background:#EFEBE9;position:absolute;top: 778px;  padding-top:30px;height:125px;text-align:center;line-height:30px;width:100%;}
+.wytj{top:-100%;left:50%;margin-left:-456px;border-radius:4px;background:#fff;width:913px;height:654px;}
+.wytjCont{margin-top:24px;width:740px;}
+.wytjTit{border-bottom:1px solid #dcdcdc;font-size:34px;color:dimgray;line-height:84px;text-align:center;}
+.wytjConta{width:98%;}
+.wytjConta td{vertical-align:top;height:50px;}
+.wytjConta td.td1{width:10%;}
+.wytjConta td.td2{width:30%;}
+.wytjConta td input,.wytjConta td textarea{border:1px solid #c9c9c9;width:100%;height:36px;line-height:38px;}
+.wytjConta td select{border:1px solid #c9c9c9;width:100%;padding:10px 0;}
+.wytjConta td textarea{height:120px;}
+.addFile{border:1px solid #d2d2d2;background:#f6f6f6 url(../images/file_03.png) no-repeat 20px center;padding-left:50px;width:145px;height:35px;line-height:35px;font-size:16px;color:#000;}
+.addFile input{top:0;left:0;width:197px;height:37px;opacity:0;cursor:pointer;}
+.butArr3{text-align:center;}
+.butArr3 button{border:none;width:198px;height:50px;cursor:pointer;color:#fff;}
+.wytj span.close,.sqfyTc span.close{top:29px;right:43px;width:24px;height:23px;cursor:pointer;}
+.sqfyTc{top:-50%;margin-top:-275px;left:50%;margin-left:-450px;border-radius:4px;background:#fff;width:910px;height:550px;}
+.sqfyTc table{width:100%;}
+.sqfyTc table td{height:60px;}
+.sqfyTc table td.td1{width:15%;text-align:right;}
+.sqfyTc table input{border:1px solid #c9c9c9;width:90%;height:36px;line-height:38px;}
+@media screen and (max-width:1366px){
+	.applayMainL{width:23%;}
+	.applayMainR{width:76%;}
+	.applayBut button,.applayBut a{margin-right:2px;}
+	}

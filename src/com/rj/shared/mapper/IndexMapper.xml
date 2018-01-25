@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rj.shared.mapper.IndexMapper" >
+	<select id="findOffList" resultType="documen" parameterType="int">
+		SELECT 
+			documenid,chiTitle,rectime,author,content,channelid,recstate
+		FROM 
+			documen
+		WHERE
+			recstate = 0
+		and 
+			channelid = #{i}
+			limit #{start},#{pageSize}
+	</select>
+	
+	<!-- 查询总条数 -->
+	<select id="selectDocumenCount" parameterType="Documen" resultType="int">
+		SELECT COUNT(*) FROM Documen  where recstate = 0 and 	channelid = 4
+	</select>
+	<!-- 分页查询 -->
+	<select id="selectPage" resultType="Documen">
+		select  documenid,chiTitle,rectime,author,content,channelid,recstate FROM Documen  where recstate = 0 and 	channelid = 4  limit  #{start},#{pageSize}
+	</select>
+	
+</mapper>

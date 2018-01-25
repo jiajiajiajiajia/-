@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,
+b, u, i, center, ol, ul, li,fieldset, form, label, legend,caption,article, aside, canvas, details, embed,figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video { margin:0; padding:0; border: 0; list-style:none;} 
+dl, dt, dd, tbody, tfoot, thead, tr, th, td,table{margin:0; padding:0;}
+a,area{blr:expression(this.onFocus=this.blur())}
+a { text-decoration:none;}
+a:hover { text-decoration:none;}
+img { -ms-interpolation-mode: bicubic; }
+body{font-family:"微软雅黑";}
+table{border:none;}
+
+.flBox{float:left;}
+.frBox{float:right;}
+
+.fix{zoom:1;}
+.fix:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
+
+.posRelative{position:relative;}
+.posAbsolute{position:absolute;}
+
+.marginAuto{margin:0 auto;}
+.marginLeft20{margin-left:20px;}
+.marginRight10{margin-right:10px;}
+.marginRight20{margin-right:20px;}
+.marginRight25{margin-right:25px;}
+.marginBot10{margin-bottom:10px;}
+.marginBot20{margin-bottom:20px;}
+.marginBot30{margin-bottom:30px;}
+.marginBot50{margin-bottom:50px;}
+
+.width1200{width:1200px;}
+.width1160{width:1160px;}
+
+.fontSize14{font-size:14px;}
+.fontSize16{font-size:16px;}
+.fontSize18{font-size:18px;}
+.fontSize24{font-size:24px;}
+.fontSize30{font-size:30px;}
+
+.colorfff{color:#fff;}
+.color000{color:#000;}
+.color69{color:#696969;}
+
+.displayNone{display:none;}
+
+/*头部样式开始*/
+.indexHeader{background-color:#B9C9C9; no-repeat center;height:137px;}
+.indexHead{height:137px;}
+.indexLogo{left:0;top:40px;width:370px;height:70px;}
+.indexLogo span{font-weight:700;}
+.nav{bottom:43px;right:40px;width:480px;}
+.nav a{padding:0 10px;color:#fff5b0;text-shadow:0 2px #000;}
+.nav .borderRight1{display:inline-block;margin-top:-1px;vertical-align:middle;background:#fff5b0;width:1px;height:20px;box-shadow:0 2px #000;}
+
+
+/*尾部样式*/
+.footer{height:80px;text-align:center;color:#707070;line-height:25px;}
+
+
+.11{}
+.11111{}
+.22222{}
+.33333{}
+.44444{}
+.daohanganniu{
+	width: 160px;
+	height: 50px;
+	background-color: #E5E5E5;
+	box-shadow:0px 0px 1px  #FC3A4E;
+	border-radius: 10px;
+	line-height: 50px;
+	text-align: center;
+	
+}

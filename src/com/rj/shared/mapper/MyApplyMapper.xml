@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rj.shared.mapper.MyApplyMapper">
+	
+	
+	
+	
+	<resultMap type="com.rj.shared.bean.Apply" id="DocumenApply">
+		<id property="applyid" column="applyid" />
+		<result property="applytime" column="applytime" />
+		<result property="userid" column="userid" />
+			<association property="documen" javaType="documen">
+				<id property="documenid" column="documenid" />
+				<result property="chiTitle" column="chiTitle" />
+				<result property="author" column="author" />
+			</association>
+	</resultMap>
+	
+	
+	
+	
+	<!-- 查询所有 -->
+	<select id="findMyApply" resultMap="DocumenApply" parameterType="Integer">
+		    select *
+			from
+				 documen as a,
+				 apply as b
+			where
+			     a.documenid = b.documenid
+			and  
+				 b.userid = #{userid};
+	</select>
+	
+</mapper>
